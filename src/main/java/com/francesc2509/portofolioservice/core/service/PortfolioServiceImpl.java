@@ -1,27 +1,23 @@
 package com.francesc2509.portofolioservice.core.service;
 
-import com.francesc2509.portofolioservice.model.LanguageLevel;
-import com.francesc2509.portofolioservice.model.LanguageResponse;
-import com.francesc2509.portofolioservice.model.ProgrammingLanguageResponse;
+import com.francesc2509.portofolioservice.model.LanguageMemberResponse;
+import com.francesc2509.portofolioservice.model.ProgrammingLanguageMemberResponse;
+import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 public class PortfolioServiceImpl implements PortfolioService {
+    private final ProgrammingLanguageMemberService programmingLanguageMemberService;
+    private final LanguageMemberService languageMemberService;
+
     @Override
-    public List<ProgrammingLanguageResponse> getProgrammingLanguages() {
-        return List.of(
-                new ProgrammingLanguageResponse("java", "intermediate", (byte) 3),
-                new ProgrammingLanguageResponse("javascript", "intermediate", (byte) 2)
-        );
+    public List<ProgrammingLanguageMemberResponse> getProgrammingLanguages(long memberId) {
+        return programmingLanguageMemberService.getProgrammingLanguagesByMemberId(memberId);
     }
 
     @Override
-    public List<LanguageResponse> getLanguages() {
-        return List.of(
-                new LanguageResponse("english", false,
-                    LanguageLevel.B1, LanguageLevel.B2, LanguageLevel.B1),
-                new LanguageResponse("spanish", false,
-                    LanguageLevel.C2, LanguageLevel.C2, LanguageLevel.C2)
-        );
+    public List<LanguageMemberResponse> getLanguages(long memberId) {
+        return languageMemberService.getLanguagesByMemberId(memberId);
     }
 }
