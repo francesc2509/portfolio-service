@@ -1,4 +1,4 @@
-package com.francesc2509.portofolioservice.core.db.entity;
+package com.francesc2509.portofolioservice.core.jpa.entity;
 
 import lombok.Getter;
 

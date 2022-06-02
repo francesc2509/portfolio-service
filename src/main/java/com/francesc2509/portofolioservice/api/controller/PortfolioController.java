@@ -13,7 +13,7 @@ import java.util.List;
 public interface PortfolioController {
 
     @GetMapping(path = "/programming-languages/member/{memberId}")
-    ResponseEntity<List<ProgrammingLanguageMemberResponse>> getProgrammingLanguages(@PathVariable long memberId) throws Exception;
+    ResponseEntity<List<ProgrammingLanguageMemberResponse>> getProgrammingLanguages(@PathVariable long memberId);
     @GetMapping(path = "/languages/member/{memberId}")
     ResponseEntity<List<LanguageMemberResponse>> getLanguages(@PathVariable long memberId);
 }

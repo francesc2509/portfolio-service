@@ -1,13 +1,13 @@
-package com.francesc2509.portofolioservice.core.db.entity;
+package com.francesc2509.portofolioservice.core.jpa.entity;
 
 import lombok.Getter;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tLanguage")
+@Table(name = "tProgrammingLanguage")
 @Getter
-public class LanguageEntity {
+public class ProgrammingLanguageEntity {
     @Id
     @GeneratedValue
     @Column(name = "id")

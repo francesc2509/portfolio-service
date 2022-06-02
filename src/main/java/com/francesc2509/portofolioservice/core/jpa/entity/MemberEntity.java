@@ -1,7 +1,4 @@
-package com.francesc2509.portofolioservice.core.db.entity;
-
-import lombok.RequiredArgsConstructor;
-import lombok.Value;
+package com.francesc2509.portofolioservice.core.jpa.entity;
 
 import javax.persistence.*;
 

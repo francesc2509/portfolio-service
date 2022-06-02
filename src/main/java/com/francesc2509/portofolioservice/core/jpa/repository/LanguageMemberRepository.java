@@ -1,6 +1,6 @@
-package com.francesc2509.portofolioservice.core.db.repository;
+package com.francesc2509.portofolioservice.core.jpa.repository;
 
-import com.francesc2509.portofolioservice.core.db.entity.LanguageMemberEntity;
+import com.francesc2509.portofolioservice.core.jpa.entity.LanguageMemberEntity;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

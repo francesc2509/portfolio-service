@@ -1,7 +1,7 @@
 package com.francesc2509.portofolioservice.core.service.config;
 
-import com.francesc2509.portofolioservice.core.db.repository.LanguageMemberRepository;
-import com.francesc2509.portofolioservice.core.db.repository.ProgrammingLanguageMemberRepository;
+import com.francesc2509.portofolioservice.core.jpa.repository.LanguageMemberRepository;
+import com.francesc2509.portofolioservice.core.jpa.repository.ProgrammingLanguageMemberRepository;
 import com.francesc2509.portofolioservice.core.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

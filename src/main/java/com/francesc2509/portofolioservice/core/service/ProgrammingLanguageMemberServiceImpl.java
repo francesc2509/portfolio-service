@@ -1,7 +1,7 @@
 package com.francesc2509.portofolioservice.core.service;
 
-import com.francesc2509.portofolioservice.core.db.entity.ProgrammingLanguageEntity;
-import com.francesc2509.portofolioservice.core.db.repository.ProgrammingLanguageMemberRepository;
+import com.francesc2509.portofolioservice.core.jpa.entity.ProgrammingLanguageEntity;
+import com.francesc2509.portofolioservice.core.jpa.repository.ProgrammingLanguageMemberRepository;
 import com.francesc2509.portofolioservice.model.ProgrammingLanguageMemberResponse;
 import lombok.RequiredArgsConstructor;
 
